@@ -38,7 +38,7 @@ FORMS += \
     MainWindow.ui \
     SSA_visu.ui
 
-QMAKE_CXXFLAGS += -std=c++11 -Wall
+QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra -Wpedantic
 
 INCLUDEPATH += \
     Go4QtRoot/ \

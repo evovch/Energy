@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cls_MainWindow</class>
+ <widget class="QMainWindow" name="cls_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>cls_MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Open</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidget"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>451</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>451</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Time filter</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <widget class="QLineEdit" name="leFromH">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>41</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>From</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leFromS">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leFromM">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leToH">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>06</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leToS">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leToM">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>30</y>
+           <width>50</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>30</y>
+           <width>21</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>to</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="lstFilters"/>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Read filters</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Draw</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Merge</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="text">
+         <string>/home/evovch/Documents/DEVELOPMENT/Ivanov/data/testMerge.root</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>Export as text</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="text">
+         <string>/home/evovch/Documents/DEVELOPMENT/Ivanov/data/run7_text.txt</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_MainWindow</receiver>
+   <slot>ChooseFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_MainWindow</receiver>
+   <slot>Merge()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>554</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>923</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_MainWindow</receiver>
+   <slot>ReadFilterFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>826</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>833</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_MainWindow</receiver>
+   <slot>DrawAllDist()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>826</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>785</x>
+     <y>513</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_MainWindow</receiver>
+   <slot>ExportAsText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>583</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>601</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ChooseFile()</slot>
+  <slot>Merge()</slot>
+  <slot>ReadFilterFile()</slot>
+  <slot>DrawAllDist()</slot>
+  <slot>ExportAsText()</slot>
+ </slots>
+</ui>
