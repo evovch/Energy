@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cls_SSA_visu</class>
+ <widget class="QWidget" name="cls_SSA_visu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SSA results</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="cls_GraphWidget" name="widget" native="true"/>
+   </item>
+   <item>
+    <widget class="cls_GraphWidget" name="widget_2" native="true"/>
+   </item>
+   <item>
+    <widget class="cls_GraphWidget" name="widget_3" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>cls_GraphWidget</class>
+   <extends>QWidget</extends>
+   <header>GraphWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
