@@ -34,8 +34,8 @@ cls_HistoWidget::cls_HistoWidget(QWidget *parent) :
     ui->canvasWidget->cd();
     gPad->SetGrid(1,1);
     mHisto->Draw();
-    //             ksiourmen
-    gStyle->SetOptStat(11110);
+    //              ksiourmen
+    gStyle->SetOptStat(111110);
     //TPaveStats* ps1 = (TPaveStats*)(mHisto->GetListOfFunctions()->FindObject("stats"));
     //ps1->SetDrawOption();
 }
@@ -63,9 +63,9 @@ void cls_HistoWidget::FillTest(void)
 void cls_HistoWidget::FillFromData(std::vector<Double_t> p_data)
 {
     // Maximum element in the data
-    Double_t v_maxElem = *std::max_element(p_data.begin(), p_data.end());
+    Double_t v_maxElem = *std::max_element(p_data.begin(), p_data.end()); // 2000.
     // Minimum element in the data
-    Double_t v_minElem = *std::min_element(p_data.begin(), p_data.end());
+    Double_t v_minElem = *std::min_element(p_data.begin(), p_data.end()); // 0.
 
     Double_t v_diff = v_maxElem - v_minElem;
 
@@ -81,9 +81,13 @@ void cls_HistoWidget::FillFromData(std::vector<Double_t> p_data)
 
     ui->canvasWidget->cd();
     mHisto->Draw();
+
+    mHisto->SetLineWidth(2);
+
     ui->canvasWidget->Modified();
     ui->canvasWidget->Update();
 
+    //              ksiourmen
     gStyle->SetOptStat(111110);
 }
 

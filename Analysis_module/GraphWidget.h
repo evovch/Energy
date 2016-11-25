@@ -42,7 +42,7 @@ public slots:
     void SetLogY(Int_t p_val = 1);
     void ToggleLogY(void);
     void UnZoom(void);
-
+    void ExportEPS(void);
 
 private:
     Ui::cls_GraphWidget *ui;

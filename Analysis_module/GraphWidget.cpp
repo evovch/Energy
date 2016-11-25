@@ -2,6 +2,7 @@
 #include "ui_GraphWidget.h"
 
 #include <QByteArray>
+#include <QFileDialog>
 
 #include <TStyle.h>
 #include <TPad.h>
@@ -170,4 +171,31 @@ void cls_GraphWidget::UnZoom(void)
     mGraph->GetXaxis()->UnZoom();
     ui->canvasWidget->Modified();
     ui->canvasWidget->Update();
+}
+
+void cls_GraphWidget::ExportEPS(void)
+{
+    QString v_qfilename = QFileDialog::getSaveFileName(this,
+                            tr("Save File"),
+                            "/home/evovch/Documents/DEVELOPMENT/Ivanov/histo.eps",
+                            tr("Encapsulated PostScript files (*.eps)"));
+/*
+    QFileDialog v_dial;
+    v_dial.setFileMode(QFileDialog::AnyFile);
+    v_dial.setNameFilter(tr("Encapsulated PostScript files (*.eps)"));
+    v_dial.setDirectory("/home/evovch/Documents/DEVELOPMENT/Ivanov/");
+
+    QStringList v_fileNames;
+    if (v_dial.exec())
+        v_fileNames = v_dial.selectedFiles();
+
+    QString v_qfilename = v_fileNames.at(0);
+*/
+    if (!v_qfilename.endsWith(".eps")) {
+        v_qfilename.append(".eps");
+    }
+
+    TString v_root_filename(v_qfilename.toStdString());
+
+    ui->canvasWidget->Print(v_root_filename);
 }

@@ -65,6 +65,13 @@
       </widget>
      </item>
      <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>EPS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="verticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
@@ -114,8 +121,8 @@
    <slot>UnZoom()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>540</x>
-     <y>62</y>
+     <x>601</x>
+     <y>59</y>
     </hint>
     <hint type="destinationlabel">
      <x>608</x>
@@ -123,9 +130,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>cls_GraphWidget</receiver>
+   <slot>ExportEPS()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>FillTest()</slot>
   <slot>UnZoom()</slot>
+  <slot>ExportEPS()</slot>
  </slots>
 </ui>
