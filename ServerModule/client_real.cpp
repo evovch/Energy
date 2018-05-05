@@ -79,6 +79,8 @@ int main(int argc, char** argv)
    if (s == -1) {
       perror("Aborting. Failed to create socket");
       return 1;
+   } else {
+      //printf("Socket created successfully.\n");
    }
 
    // Bind
@@ -87,6 +89,8 @@ int main(int argc, char** argv)
    if (bindRes == -1) {
       perror("Aborting. Failed to bind socket");
       return 1;
+   } else {
+      //printf("Socket bind successfully.\n");
    }
 
 /*
@@ -96,6 +100,8 @@ int main(int argc, char** argv)
    if (connectRes == -1) {
       perror("Aborting. Failed to connect socket");
       return 1;
+   } else {
+      //printf("Socket connected successfully.\n");
    }
 */
 

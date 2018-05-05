@@ -1,5 +1,5 @@
 FLAGS=-Wall -Wextra -std=c++11
-ROOTFLAGS=-I`root-config --incdir` `root-config --libs`
+ROOTFLAGS=-I`root-config --incdir` -L`root-config --libdir` -lCore -lRIO -lTree
 
 .PHONY: clean all
 
